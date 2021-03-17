@@ -1,3 +1,8 @@
+body {
+  font-style: normal;
+  font-family: cursive;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,6 +22,39 @@ header input[type=button]:hover {
   background-color: yellow;
 }
 
+section {
+  text-align: center;
+}
+
+section>h2 {
+  color: purple;
+}
+
+form {
+  align-content: center;
+}
+
+form>input {
+  padding: 1em;
+  margin: 0.5em;
+  width: 20em;
+  border: none;
+  border-bottom: solid #8000802e 1px;
+}
+
+form>input:focus {
+  border: 1px purple;
+  box-shadow: 0 0 3px purple;
+  outline-offset: 0px;
+  outline: none;
+}
+
+form>input[type=submit] {
+  margin-top: 2em;
+  background-color: #8000802e;
+  border: solid #8000802e 1px;
+}
+
 #index-section {
   display: block;
 }
@@ -29,6 +67,20 @@ header input[type=button]:hover {
   display: none;
 }
 
+#toggle-password {
+  margin-left: -3em;
+  cursor: pointer;
+}
+
 .clickable:hover {
   cursor: pointer;
+}
+
+.text-button {
+  color: purple;
+  text-decoration: underline;
+}
+
+.password-div {
+  padding: 0em;
 }

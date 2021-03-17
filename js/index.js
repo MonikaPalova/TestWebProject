@@ -21,9 +21,30 @@ function loginPress() {
 }
 
 function _openSection(sectionId) {
-  document.getElementById(sectionId).style.display = "block";
+  var display = document.getElementById(sectionId).style.display;
+  if (display === "block") {
+    _reloadSection(sectionId);
+  } else {
+    document.getElementById(sectionId).style.display = "block";
+  }
+}
+
+function _reloadSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  var content = section.innerHTML;
+  section.innerHTML = content;
 }
 
 function _closeSection(sectionId) {
   document.getElementById(sectionId).style.display = "none";
+}
+
+function passwordToggle() {
+  document.getElementById("toggle-password").onclick = function() {
+    if (this.checked) {
+      document.getElementById("password").type = "text";
+    } else {
+      document.getElementById("password").type = "password";
+    }
+  };
 }

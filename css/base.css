@@ -1,0 +1,34 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid;
+  border-bottom-color: blueviolet;
+}
+
+header input[type=button] {
+  color: blue;
+  margin: 1em;
+  padding: 1em;
+  border: hidden;
+  border-radius: 2em;
+}
+
+header input[type=button]:hover {
+  background-color: yellow;
+}
+
+#index-section {
+  display: block;
+}
+
+#register-section {
+  display: none;
+}
+
+#login-section {
+  display: none;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}

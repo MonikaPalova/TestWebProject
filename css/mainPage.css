@@ -1,0 +1,22 @@
+html {
+  font-style: normal;
+  font-family: cursive;
+}
+header {
+  background-color:purple;
+  display: flex;
+  justify-content: space-between;
+  height: 3em;
+}
+
+header * {
+  color:white;
+}
+
+#name {
+margin-left:1em;
+}
+
+#name:hover {
+  cursor:pointer;
+}

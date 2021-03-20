@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <script src="../js/index.js"></script>
+  <title>Log in</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="clickable" onclick="welcomePress()">Welcome!</h1>
+  </header>
+  <section id="register-section">
+    <h2> Register </h2>
+    <form id="registration-form" action="../php/register.php">
+      <input type="text" id="username" placeholder="Username" /><br><!-- //may remove ids not used -->
+      <input type="email" id="email" placeholder="Email address" /><br>
+      <input type="password" id="new-password" placeholder="Password" /><br>
+      <div>
+        <input type="checkbox" id="toggle-password" onclick="passwordToggle()" />
+        <label for="toggle-password">Show password</label>
+      </div>
+      <input type="submit" id="register-button" value="Register" />
+    </form>
+    <br>
+    <p>Already have an account?
+      <label class="clickable text-button" onclick="loginPress()">Log in</label>
+    </p>
+  </section>
+</body>
+
+</html>

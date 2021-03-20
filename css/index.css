@@ -55,18 +55,6 @@ form>input[type=submit] {
   border: solid #8000802e 1px;
 }
 
-#index-section {
-  display: block;
-}
-
-#register-section {
-  display: none;
-}
-
-#login-section {
-  display: none;
-}
-
 #toggle-password {
   margin-left: -3em;
   cursor: pointer;

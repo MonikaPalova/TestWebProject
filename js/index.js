@@ -1,23 +1,17 @@
-const REGISTER_SECTION_ID = "register-section";
-const LOGIN_SECTION_ID = "login-section";
-const INDEX_SECTION_ID = "index-section";
+const REGISTER_PATH = "register.html";
+const LOGIN_PATH = "login.html";
+const INDEX_PATH = "index.html";
 
 function welcomePress() {
-  _openSection(INDEX_SECTION_ID);
-  _closeSection(LOGIN_SECTION_ID);
-  _closeSection(REGISTER_SECTION_ID);
+  window.location = INDEX_PATH;
 }
 
 function registerPress() {
-  _openSection(REGISTER_SECTION_ID);
-  _closeSection(LOGIN_SECTION_ID);
-  _closeSection(INDEX_SECTION_ID);
+  window.location = REGISTER_PATH;
 }
 
 function loginPress() {
-  _openSection(LOGIN_SECTION_ID);
-  _closeSection(REGISTER_SECTION_ID);
-  _closeSection(INDEX_SECTION_ID);
+  window.location = LOGIN_PATH;
 }
 
 function _openSection(sectionId) {
